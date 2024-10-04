@@ -1,0 +1,620 @@
+body{
+  /* height: 600vw; */
+  text-align: center;
+}
+
+header{
+  font-weight: bold;
+  z-index: 11;
+}
+.header-container, .header_nav_ul {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: transparent;
+}
+
+.header-container .logo {
+  display: block;
+  min-width: 160px;
+  max-width: 160px;
+}
+
+header {
+  color: #fff;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  height: 98px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header_nav {
+  text-align: center;
+  
+}
+
+.header_nav_ul > li {
+  position: relative; /* 부모 요소를 기준으로 자식 메뉴를 배치하기 위해 필요 */
+  min-width: auto
+}
+
+.header_nav_ul > li > a {
+  display: block;
+  /* height: 50px; */
+  margin: 0 40px;
+  line-height: 50px;
+  font-weight: 500;
+  width: 150px;
+}
+
+.header_nav_ul > li:last-child > a {
+  border-right: none;
+}
+
+.header_nav_ul > li:hover {
+  background-color: #fff;
+  color: #ff8800;
+}
+
+/* 서브 메뉴 기본 숨김 */
+.header_nav_ul .sub-menu {
+  display: none;
+  position: absolute;
+  top: 50px; /* 메인 메뉴 아래에 표시되도록 설정 */
+  left: 0;
+  min-width: 100%; /* 부모(li)의 너비만큼 서브메뉴의 최소 너비 설정 */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  z-index: 1000; /* 다른 요소 위에 표시되도록 z-index 설정 */
+}
+
+/* 서브 메뉴 나타내기 */
+.header_nav_ul li:hover .sub-menu {
+  display: block;
+}
+
+.header_nav_ul .sub-menu li {
+  width: 100%;
+  padding: 10px 0;
+  text-align: left;
+}
+
+.header_nav_ul .sub-menu li a {
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+}
+
+.header_nav_ul .sub-menu li a:hover {
+  background-color: #eee;
+}
+
+.side a{
+  margin: 0 20px;
+}
+.side .ship{
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fefefe;
+  background-color: #ff8800;
+}
+
+.bg-video{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    min-width: 192.77vh;
+    height: 62vw;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    max-height: 1080px;
+    z-index: -1;
+}
+.main-visual{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100vh; /* 화면 전체 높이 */
+  overflow: hidden;
+  background: url(../image/check_bj.png) ;
+}
+.main-visual .side {
+  display: block;
+  position: absolute;
+  right: 40px;
+  top: 50%; /* 세로 중앙에 위치 */
+  transform: translateY(-50%); /* 세로 중앙 정렬을 위한 transform */
+  
+  
+}
+.main-visual .side .one{
+  margin-bottom: 20px;
+}
+.main-visual .side a{
+  background-color: orange;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, .25);
+  color: #fff;
+}
+.main-visual .side a img{
+  vertical-align: baseline;
+  font-size: 50%;
+  width: 50px;
+}
+.main-visual .side a p{
+  font-size: 12px;
+  text-align: center;
+}
+
+.main-visual .main-text{
+  padding-left: 6vw;
+  text-align: left;
+}
+.main-visual .main-text h2{
+  font-size: 60px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.25;
+    color: #fff;
+}
+.main-visual .main-text h2 strong{
+  display: block;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.main-visual .main-text p{
+  padding-left: 25px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.at-a-glance {
+  padding-top: 120px;
+  text-align: center; /* 부모 요소를 기준으로 텍스트 및 자식 요소 중앙 정렬 */
+}
+
+.up_p h2{
+  font-size: 46px;
+}
+
+.up_p p {
+  font-size: 17px;
+  color: #666;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 45px;
+}
+
+.at-a-glance .ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.at-a-glance .stats > div {
+  text-align: center; /* 각 자식 요소의 내용도 중앙에 정렬 */
+}
+.at-a-glance ul .item{
+    flex: 0 1 25%;
+    padding: 12px 20px 50px;
+    text-align: center;
+    border-right: 1px solid #e6eaee
+}
+.item .img{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 28px;
+  height: 35px;
+  margin: auto;
+}
+.item .text{
+  position: relative;
+  margin-top: 35px;
+}
+.item .text strong{
+  font-size: 66px;
+  line-height: 1;
+  font-weight: 700;
+}
+.item .text_under{
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.45;
+  color: #022974;
+  text-align: center;
+}
+.item .text_under span{
+  display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+}
+.at-a-glance .ul .item .text::after{
+  content: "";
+  display: block;
+  width: 24px;
+  height: 1px;
+  margin: 18px auto;
+  background-color: #000;
+}
+
+
+
+.business-area{
+  position: relative;
+  margin-top: 100px;
+}
+.business-area .business-wrapper .left .menu .one{
+  color: orange;
+}
+.business-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.business-area .left::before{
+  content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    width: 100%;
+    font-size: 0%;
+    background-color: #eee;
+}
+.business-area .left{
+margin-left: 160px;
+  position: relative;
+  float: left;
+  width: calc(50% - 160px);
+  height: 590px;
+  padding: 60px 80px;
+  text-align: center;
+  background-color: #eee;
+  z-index: 1;
+}
+.business-area .left ul{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 37px;
+}
+.business-area .left ul li{
+    position: relative;
+    padding: 4px 12px;
+}
+.business-area .left .menu_under{
+  box-sizing: border-box;
+  position: relative;
+    display: block;
+}
+.business-area .left .menu_under li h3{
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: 700;
+  color: #333;
+}
+.business-area .left .menu_under ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.business-area .business-wrapper .left .menu li:hover{
+  color: orange;
+}
+
+.business-area .right{
+  position: relative;
+    float: left;
+    top: 38px;
+    width: 50%;
+    z-index: 2;
+}
+.business-area .right ul{
+  overflow: hidden;
+margin: 0;
+padding: 0;
+}
+
+.business-area .right ul li{
+  width: 960px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+  opacity: 1;
+  
+  
+}
+.business-area .right ul li img{
+  display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+    
+}
+.business-area .btn {
+  position: absolute;
+  top: 400px; /* Moves the button higher above the content */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: orange;
+  padding: 16px 40px;
+  transition: 0.3s;
+}
+.btn:hover {
+  border-radius: 40px;
+}
+
+.pase3{
+  padding-top: 90px;
+  background: #fff url(../image/bg_worldmap.png) no-repeat bottom 30px center;
+  padding-bottom: 60px;
+}
+.pase3 ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}    
+.pase3 ul li{
+  padding: 5px 20px;
+}
+.pase3 ul li a{
+  font-weight: 800;
+}
+  .pase3 ul li:hover{
+    color: orange;
+  }
+.pase3 img{
+  width: 70%;
+}
+.pase3 .div_btn{
+  padding-top: 45px;
+}
+
+.pase3 .div_btn .btn2{
+  min-width: 155px;
+  padding: 15px 25px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #f18d00;
+  display: inline-block !important;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* .pase3 .move .num{
+  left: -122px;
+    padding-right: 58px;
+    position: absolute;
+    top: 50%;
+    width: 122px;
+    border: 0;
+    background-color: transparent;
+    transform: translateY(-50%);
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 0;
+} */
+
+.schedule{
+  padding-bottom: 120px;
+  position: relative;
+    overflow: hidden;
+    padding-top: 60px;
+}
+.schedule .up_p::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 21px;
+  margin-left: -4px;
+  background-color: #ff8a26;
+  transform: skewX(-25deg);
+}
+.schedule .event{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 0;
+  height: 410px;
+}
+.schedule .event .main-img{
+  flex: 0 0 37.5%;
+  height: 100%;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  color: #fff;
+}
+
+.schedule .event .main-img article{
+  position: relative;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+.schedule .event .main-img article a{
+  display: block;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+.schedule .event .main-img article a::before{
+  content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+ 
+    z-index: 1;
+}
+.schedule .event .main-img article a h3{
+  display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 60px;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 60px;
+    
+    text-align: center;
+    background-color: #f2851f;
+    z-index: 2;
+    word-break: keep-all;
+}
+.schedule .event .main-img article a .img{
+  background-image: url(../image/wsw.jpg);
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+  vertical-align: baseline;
+}
+.schedule .event .main-img article a .txt{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.schedule .event .main-img article a .txt p{
+    display: -webkit-box;
+    margin-bottom: 25px;
+    font-size: 44px;
+    font-weight: 500;
+   
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+}
+.schedule .event .main-img article a .txt time{
+  display: block;
+  margin-bottom: 25px;
+  font-family: "Play", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+}
+.schedule .event .main-img article a span{
+  line-height: 6rem;
+}
+.schedule .event .main-img article a .btn{
+  width: 130px;
+  height: 42px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 40px;
+  border: 1px solid #fff;
+  display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+.schedule .notice{
+  flex: 0 0 43.75%;
+  height: 100%;
+}
+.schedule .notice article{
+  padding: 10px 7% 0;
+  display: block;
+}
+.schedule .event .notice article .heeeead{
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.schedule .event .notice article .heeeead h3{
+    font-size: 38px;
+    font-weight: 700;
+    color: #333;
+}
+.schedule .event .notice article .heeeead a{
+    width: 130px;
+    height: 42px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #333;
+    border: 1px solid #dcdcdc;
+}
+.schedule .event .notice article ul{
+ 
+  text-align: left;
+}
+.schedule .event .notice article ul .item{
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+.schedule .event .notice article ul .item a{
+  display: block;
+    position: relative;
+    float: left;
+    width: calc(100% - 150px);
+    overflow: hidden;
+    padding: 17px 20px 17px 28px;
+    font-size: 16px;
+    color: #666;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.schedule .event .side-img{
+  display: block;
+  height: 100%;
+  padding: 20px;
+}
+
+
+

@@ -507,7 +507,7 @@ padding: 0;
     word-break: keep-all;
 }
 .schedule .event .main-img article a .img{
-  background-image: url(./image/wsw.jpg);
+  background-image: url(image/wsw.jpg);
   position: relative;
   height: 100%;
   background-size: cover;

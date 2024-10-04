@@ -130,7 +130,7 @@ header {
   align-items: center;
   height: 100vh; /* 화면 전체 높이 */
   overflow: hidden;
-  background: url(./image/check_bj.png) ;
+  background: url(../image/check_bj.png) ;
 }
 .main-visual .side {
   display: block;
@@ -381,7 +381,7 @@ padding: 0;
 
 .pase3{
   padding-top: 90px;
-  background: #fff url(./image/bg_worldmap.png) no-repeat bottom 30px center;
+  background: #fff url(../image/bg_worldmap.png) no-repeat bottom 30px center;
   padding-bottom: 60px;
 }
 .pase3 ul{
